@@ -1,0 +1,60 @@
+body{
+    background:#121212;
+    color:white;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    text-align:center;
+    width:450px;
+}
+
+.description{
+    background:#1e1e1e;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.scoreboard{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+}
+
+.cell{
+    height:100px;
+    background:#222;
+    border:2px solid #00ffff;
+    font-size:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cell:hover{
+    background:#333;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00ffff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
